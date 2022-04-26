@@ -27,7 +27,12 @@ for (item of buttons){
         }
         
         else if(button_text=='='){
+            try{
             button_text=eval(screenvalue);
+            }
+            catch{
+                button_text="Invalid Syntax";
+            }
             screenvalue='';
         }
         
